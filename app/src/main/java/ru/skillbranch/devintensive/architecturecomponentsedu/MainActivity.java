@@ -1,8 +1,10 @@
 package ru.skillbranch.devintensive.architecturecomponentsedu;
 
+import android.arch.core.util.Function;
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.Transformations;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable String value) {
                 //textView.setText(value);
+            }
+        });
+
+        //поменять типа данных в LiveData с помощью Transformations.map.
+        //Рассмотрим пример, в котором LiveData<String> будем превращать в LiveData<Integer>:
+        //we also have switchMap to, for example, get User(obj) by his id(long)
+        LiveData<Integer> liveDataInt = Transformations.map(liveData, new Function<String, Integer>() {
+            @Override
+            public Integer apply(String input) {
+                return Integer.parseInt(input);
             }
         });
     }
