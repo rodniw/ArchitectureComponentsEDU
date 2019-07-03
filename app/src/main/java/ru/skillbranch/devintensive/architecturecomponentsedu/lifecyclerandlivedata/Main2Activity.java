@@ -1,7 +1,9 @@
-package ru.skillbranch.devintensive.architecturecomponentsedu;
+package ru.skillbranch.devintensive.architecturecomponentsedu.lifecyclerandlivedata;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import ru.skillbranch.devintensive.architecturecomponentsedu.R;
 
 public class Main2Activity extends AppCompatActivity {
 

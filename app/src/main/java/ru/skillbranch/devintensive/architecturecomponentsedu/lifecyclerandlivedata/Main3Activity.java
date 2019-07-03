@@ -1,4 +1,4 @@
-package ru.skillbranch.devintensive.architecturecomponentsedu;
+package ru.skillbranch.devintensive.architecturecomponentsedu.lifecyclerandlivedata;
 
 
 import android.arch.lifecycle.LifecycleObserver;
@@ -8,6 +8,8 @@ import android.arch.lifecycle.Observer;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import ru.skillbranch.devintensive.architecturecomponentsedu.R;
 
 public class Main3Activity extends AppCompatActivity{
 

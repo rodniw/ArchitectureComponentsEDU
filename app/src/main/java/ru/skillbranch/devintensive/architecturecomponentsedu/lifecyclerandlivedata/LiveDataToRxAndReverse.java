@@ -1,4 +1,4 @@
-package ru.skillbranch.devintensive.architecturecomponentsedu;
+package ru.skillbranch.devintensive.architecturecomponentsedu.lifecyclerandlivedata;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.LiveDataReactiveStreams;
