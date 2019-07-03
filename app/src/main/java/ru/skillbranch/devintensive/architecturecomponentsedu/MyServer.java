@@ -21,6 +21,7 @@ public class MyServer implements LifecycleObserver {
 
     //В этом случае все события будут вызывать этот метод.
     //Используйте входящий параметр event, чтобы определить, какое именно событие произошло
+    //Lifecycle.Event - this is ENUM class
     @OnLifecycleEvent(ON_ANY)
     void onAny(LifecycleOwner source, Lifecycle.Event event) {
         // ...
