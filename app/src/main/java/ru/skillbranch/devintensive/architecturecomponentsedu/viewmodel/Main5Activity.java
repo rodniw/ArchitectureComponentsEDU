@@ -8,6 +8,7 @@ import ru.skillbranch.devintensive.architecturecomponentsedu.R;
 
 public class Main5Activity extends AppCompatActivity {
 
+    //i mocked it
     long id = 4363;
 
     @Override
