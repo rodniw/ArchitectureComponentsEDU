@@ -13,18 +13,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         myServer = new MyServer();
+        getLifecycle().addObserver(myServer);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        myServer.connect();
-    }
+    //А методы onStart и onStop в Activity нам больше не нужны, их можно удалить.
 
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        myServer.disconnect();
-    }
+    /*Теперь, при переходе Activity из состояния CREATED в состояние STARTED,
+    его объект Lifecycle вызовет метод myServer.connect.
+    А при переходе из STARTED в CREATED - Lifecycle вызовет myServer disconnect.*/
 }
