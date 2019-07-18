@@ -16,7 +16,7 @@ import static android.arch.persistence.room.ColumnInfo.TEXT;
 // чтобы в этой таблице не было записи с повторящейся парой значений first_name и last_name.
 @Entity(
         tableName = "employees",
-        indices = {@Index(value = {"first_name", "last_name"}, unique = false)}
+        indices = {@Index(value = {"full_name", "last_name"}, unique = false)}
 )
 public class Employee {
 

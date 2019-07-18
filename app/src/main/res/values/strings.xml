@@ -3,4 +3,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_fruit">Change Fruit</string>
+    <string name="enter_a_fruit_name">Enter a fruit name</string>
+    <string name="select_random_fruit_for_edittext">Select random fruit for EditText</string>
+    <string name="display_edittext_content">Display EditText Content</string>
 </resources>

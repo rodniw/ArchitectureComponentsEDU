@@ -10,9 +10,9 @@ import static android.arch.persistence.room.ForeignKey.CASCADE;
 
 @Entity(
         foreignKeys
-        = @ForeignKey(entity = Employee.class, parentColumns = "id", childColumns = "employee_id", onDelete = CASCADE),
-        indices = {@Index(value = {"first_name", "last_name"}, unique = true)}
-)
+        = @ForeignKey(entity = Employee.class, parentColumns = "id", childColumns = "employee_id", onDelete = CASCADE))
+        //,
+        //indices = {@Index(value = {"full_name", "last_name"}, unique = true)
 public class Car {
 
     @PrimaryKey(autoGenerate = true)
